@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
 
                                 {/* Criança */}
-                <div className="flex items-center justify-between mb-6 pb-6 border-b">
+                <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <Baby className="text-primary w-6 h-6" />
                     <div>
@@ -217,7 +217,7 @@ export default function Home() {
                 </div>
 
                 {/* Adicional */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mb-6 pb-6 border-b">
                   <div className="flex items-center gap-3">
                     <Hand className="text-primary w-6 h-6" />
                     <div>
