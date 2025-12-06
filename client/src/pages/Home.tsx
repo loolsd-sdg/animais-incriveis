@@ -7,9 +7,11 @@ import { useState } from "react";
 export default function Home() {
   const [adultQuantity, setAdultQuantity] = useState(1);
   const [childQuantity, setChildQuantity] = useState(0);
-  const adultPrice = 89.90;
-  const childPrice = 69.90;
-  const total = (adultQuantity * adultPrice) + (childQuantity * childPrice);
+  const adultPrice = 99.99;
+  const childPrice = 89.90;
+    const additionalPrice = 40.00;
+  const [additionalQuantity, setAdditionalQuantity] = useState(0);
+  const total = (adultQuantity * adultPrice) + (childQuantity * childPrice) + (additionalQuantity * additionalPrice);
   const totalTickets = adultQuantity + childQuantity;
 
   const handleWhatsAppClick = () => {
@@ -27,8 +29,11 @@ export default function Home() {
     if (adultQuantity > 0) {
       message += `${adultQuantity} Adulto${adultQuantity > 1 ? 's' : ''} - R$ ${(adultQuantity * adultPrice).toFixed(2)}\n`;
     }
-    if (childQuantity > 0) {
+        if (childQuantity > 0) {
       message += `${childQuantity} Criança${childQuantity > 1 ? 's' : ''} - R$ ${(childQuantity * childPrice).toFixed(2)}\n`;
+    }
+    if (additionalQuantity > 0) {
+      message += `${additionalQuantity} Adicional "Aula ambiental e Interação com a Python" - R$ ${(additionalQuantity * additionalPrice).toFixed(2)}\n`;
     }
     message += `\nTotal: R$ ${total.toFixed(2)}`;
     const whatsappUrl = `https://wa.me/5512988035544?text=${encodeURIComponent(message)}`;
@@ -36,9 +41,12 @@ export default function Home() {
   };
 
   const incrementAdult = () => setAdultQuantity(prev => prev + 1);
-  const decrementAdult = () => setAdultQuantity(prev => prev > 0 ? prev - 1 : 0);
+    const decrementAdult = () => setAdultQuantity(prev => prev > 0 ? prev - 1 : 0);
   const incrementChild = () => setChildQuantity(prev => prev + 1);
   const decrementChild = () => setChildQuantity(prev => prev > 0 ? prev - 1 : 0);
+
+  const incrementAdditional = () => setAdditionalQuantity(prev => prev + 1);
+  const decrementAdditional = () => setAdditionalQuantity(prev => prev > 0 ? prev - 1 : 0);
 
   return (
     <div className="min-h-screen">
@@ -178,8 +186,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Criança */}
-                <div className="flex items-center justify-between">
+                                {/* Criança */}
+                <div className="flex items-center justify-between mb-6 pb-6 border-b">
                   <div className="flex items-center gap-3">
                     <Baby className="text-primary w-6 h-6" />
                     <div>
@@ -201,6 +209,36 @@ export default function Home() {
                       variant="outline" 
                       size="icon"
                       onClick={incrementChild}
+                      className="h-10 w-10"
+                    >
+                      +
+                    </Button>
+                  </div>
+                </div>
+
+                {/* Adicional */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <Hand className="text-primary w-6 h-6" />
+                    <div>
+                      <h3 className="font-bold text-lg">Adicional: Aula ambiental e Interação com a Python</h3>
+                      <p className="text-primary font-semibold text-xl">R$ {additionalPrice.toFixed(2)}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Button 
+                      variant="outline" 
+                      size="icon"
+                      onClick={decrementAdditional}
+                      className="h-10 w-10"
+                    >
+                      -
+                    </Button>
+                    <span className="text-2xl font-bold w-12 text-center">{additionalQuantity}</span>
+                    <Button 
+                      variant="outline" 
+                      size="icon"
+                      onClick={incrementAdditional}
                       className="h-10 w-10"
                     >
                       +
