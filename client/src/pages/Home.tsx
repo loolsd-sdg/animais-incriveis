@@ -221,7 +221,7 @@ export default function Home() {
                   <div className="flex items-center gap-3">
                     <Hand className="text-primary w-6 h-6" />
                     <div>
-                      <h3 className="font-bold text-lg">Adicional: Aula ambiental e Interação com a Python</h3>
+                      <h3 className="font-bold text-lg">Adicional: Aula ambiental e Interação com a Python (por pessoa)</h3>
                       <p className="text-primary font-semibold text-xl">R$ {additionalPrice.toFixed(2)}</p>
                     </div>
                   </div>
