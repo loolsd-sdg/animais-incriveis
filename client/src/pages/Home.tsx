@@ -158,14 +158,14 @@ export default function Home() {
               <div className="bg-muted/50 rounded-xl p-8 mb-6">
                 {/* Adulto */}
                 <div className="flex items-center justify-between mb-6 pb-6 border-b">
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Users className="text-primary w-6 h-6" />
                     <div>
                       <h3 className="font-bold text-lg">Adulto</h3>
                       <p className="text-primary font-semibold text-xl">R$ {adultPrice.toFixed(2)}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Button 
                       variant="outline" 
                       size="icon"
@@ -188,14 +188,14 @@ export default function Home() {
 
                                 {/* Criança */}
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Baby className="text-primary w-6 h-6" />
                     <div>
                       <h3 className="font-bold text-lg">Criança</h3>
                       <p className="text-primary font-semibold text-xl">R$ {childPrice.toFixed(2)}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Button 
                       variant="outline" 
                       size="icon"
@@ -218,14 +218,14 @@ export default function Home() {
 
                 {/* Adicional */}
                 <div className="flex items-center justify-between mb-6 pb-6 border-b">
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Hand className="text-primary w-6 h-6" />
                     <div>
                       <h3 className="font-bold text-lg">Adicional: Aula ambiental e Interação com a Python (por pessoa)</h3>
                       <p className="text-primary font-semibold text-xl">R$ {additionalPrice.toFixed(2)}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-3 flex-shrink-0">
+                  <div className="flex items-center gap-3">
                     <Button 
                       variant="outline" 
                       size="icon"
