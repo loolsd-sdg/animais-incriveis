@@ -7,8 +7,8 @@ import { useState } from "react";
 export default function Home() {
   const [adultQuantity, setAdultQuantity] = useState(1);
   const [childQuantity, setChildQuantity] = useState(0);
-  const adultPrice = 99.90;
-  const childPrice = 89.90;
+  const adultPrice = 99.99;
+  const childPrice = 79.99;
     const additionalPrice = 40.00;
   const [additionalQuantity, setAdditionalQuantity] = useState(0);
   const total = (adultQuantity * adultPrice) + (childQuantity * childPrice) + (additionalQuantity * additionalPrice);

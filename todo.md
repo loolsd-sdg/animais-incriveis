@@ -16,7 +16,7 @@
 - [x] Garantir responsividade mobile
 - [x] Testar integração WhatsApp
 
-- [x] Implementar sistema de ingressos diferenciados (adulto R$ 89,90 e criança R$ 69,90)
+- [x] Implementar sistema de ingressos diferenciados (adulto R$ 99,99 e criança R$ 79,99)
 - [x] Adicionar seletores independentes para adulto e criança
 - [x] Atualizar cálculo automático do total com dois tipos de ingresso
 - [x] Atualizar mensagem do WhatsApp com detalhamento de adultos e crianças

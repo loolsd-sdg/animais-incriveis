@@ -1,0 +1,6 @@
+{
+  "adulto": 99.99,
+  "infantil": 79.99,
+  "adicional": 40.00,
+  "observacao": "Este arquivo serve como referência. Para alterar os preços no site, edite o arquivo client/src/pages/Home.tsx"
+}

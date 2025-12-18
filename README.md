@@ -8,7 +8,7 @@ Site institucional e de vendas de ingressos para o serpentário Animais Incríve
 
 Página web moderna no estilo e-commerce desenvolvida para promover e vender ingressos do Animais Incríveis, um dos maiores serpentários do Brasil. O site oferece:
 
-- **Sistema de ingressos diferenciados**: Adulto (R$ 89,90) e Criança (R$ 69,90)
+- **Sistema de ingressos diferenciados**: Adulto (R$ 99,99) e Criança (R$ 79,99)
 - **Integração WhatsApp**: Compra direta pelo WhatsApp com mensagem automática
 - **Google Ads tracking**: Rastreamento completo de conversões
 - **Design responsivo**: Otimizado para desktop, tablet e mobile
